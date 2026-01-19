@@ -8,8 +8,11 @@ The approach first detects and classifies **individual cells**, followed by a **
 
 ## Project Overview
 
-Traditional single-stage cell classification often struggles with complex cellular structures and subtle morphological differences.
-This project addresses that limitation by introducing a **hierarchical classification pipeline**:
+Direct end-to-end cell classification achieved an initial accuracy of ~40%, indicating limitations in capturing subtle morphological variations using a single-stage approach.
+
+To address this, a hierarchical two-stage pipeline was introduced, resulting in an average classification accuracy of ~70%, demonstrating a significant improvement in robustness and prediction quality.
+
+**Two-Stage Pipeline**
 
 1. **Stage 1 – Individual Cell Detection & Classification**
 

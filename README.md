@@ -14,17 +14,23 @@ To address this, a hierarchical two-stage pipeline was introduced, resulting in 
 
 **Two-Stage Pipeline**
 
-1. **Stage 1 – Individual Cell Detection & Classification**
+1. **Stage 1 – Individual Cell Detection**
 
    * Detects individual cells using oriented bounding boxes.
    * Performs initial cell-level classification.
    * Trained using enhanced microscopy images.
+
+<img width="317" height="326" alt="image" src="https://github.com/user-attachments/assets/60300701-54d4-4fdc-a192-833518e116bf" />
+
 
 2. **Stage 2 – Half-Cell (Pole) Classification**
 
    * Each detected cell is split into two poles (half-cells).
    * Pole-level features are classified independently.
    * Pole predictions are combined to improve final cell classification.
+
+<img width="317" height="337" alt="image" src="https://github.com/user-attachments/assets/53742126-1f58-4c2c-8bae-122e1c218a1f" />
+
 
 This staged design improves robustness and accuracy compared to single-pass classification.
 
